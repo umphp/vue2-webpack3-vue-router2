@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/**************评论公用部分************************/
+.discuss .dis-num { font-size: 1.4rem; font-weight: bold; margin-bottom: 1.6rem; }
+.discuss .dis-form { position: relative; }
+.discuss .dis-form a { position: absolute; width: 4.2rem; height: 2.4rem; right: 0.5rem; top: 50%; margin-top: -1.2rem; font-size: 1.3rem; color: #fff; background-color: #0096ff; text-align: center; line-height: 2.4rem; border-radius: 0.15rem; }
+.discuss .dis-form .dis-input { width: 100%; box-sizing: border-box; padding: 0.5rem 5.7rem 0.5rem 1rem; height: 3.5rem; line-height: 3.5rem; border: 1px solid #c5d1de; }
+.discuss .dis-list .dis-item { padding: 1.8rem 0 2.0rem 0; border-bottom: 1px dotted #dadada; }
+.discuss .dis-list .dis-item:last-child { border-bottom: 0; }
+.discuss .dis-list .dis-item .content { font-size: 1.4rem; }
+.discuss .dis-list .dis-item .ucommpraise { font-size: 1.2rem; margin-top: 1rem; }
+.discuss .dis-list .dis-item .ucommpraise i[class*="g-iconfont"] { color: #a8b6c5; font-size: 1.4rem; margin-right: 0.5rem; }
+.discuss .dis-list .dis-item .ucommpraise > a { vertical-align: initial; }
+.discuss .dis-list .dis-item .ucommpraise .love, .discuss .dis-list .dis-item .ucommpraise .reply-i, .discuss .dis-list .dis-item .ucommpraise .del { width: 8rem; }
+.discuss .dis-list .dis-item .ucommpraise span { margin-right: 0.7rem; color: #999; }
+.discuss .dis-list .dis-item .ucommpraise .like-up { position: relative; background-color: #e2edff; border-radius: 0.25rem; padding-left: 1.3rem; display: inline-block; height: 1.8rem; line-height: 1.8rem; }
+.discuss .dis-list .dis-item .ucommpraise .up-three { display: inline-block; border-left: 0.35rem solid transparent; border-right: 0.35rem solid transparent; border-bottom: 0.4rem solid #5d90cc; position: absolute; left: 0.4rem; top: 50%; margin-top: -0.2rem; }
+.discuss .dis-list .dis-item .ucommpraise .like-down { position: relative; background-color: #e2edff; border-radius: 0.25rem; display: inline-block; height: 1.8rem; line-height: 1.8rem; width: 1.8rem; text-align: center; margin-right: 0.8rem; }
+.discuss .dis-list .dis-item .ucommpraise .down-three { display: inline-block; border-left: 0.35rem solid transparent; border-right: 0.35rem solid transparent; border-top: 0.4rem solid #5d90cc; position: relative; top: -0.2rem; }
+.discuss .dis-list .user { color: #999; margin: 1rem 0; }
+.discuss .dis-list .user span { margin-left: 0.8rem; }
+.discuss .dis-list .user .user-img { display: inline-block; width: 2.5rem; height: 2.5rem; border-radius: 50%; overflow: hidden; vertical-align: middle; }
+.discuss .dis-list .user .user-img img { width: 2.5rem; height: 2.5rem; }
+.discuss .dis-list .user .user-name { font-size: 1.4rem; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 15rem; display: inline-block; vertical-align: middle; }
+.discuss .dis-list .user .user-time { font-size: 1.2rem; }
+.discuss .dis-list .reply { width: 100%; background-color: #f2f6f8; margin-top: 1.2rem; padding: 1.6rem; box-sizing: border-box; }
+.discuss .dis-list .reply .rep-num { font-size: 1.3rem; font-weight: bold; margin-bottom: 0.9rem; }
+.discuss .dis-list .reply .rep-form { position: relative; }
+.discuss .dis-list .reply .rep-form a { position: absolute; width: 4.2rem; height: 2.4rem; right: 0.5rem; top: 50%; margin-top: -1.2rem; font-size: 1.3rem; color: #fff; background-color: #0096ff; text-align: center; line-height: 2.4rem; border-radius: 0.15rem; }
+.discuss .dis-list .reply .rep-form .rep-input { width: 100%; box-sizing: border-box; padding: 0.5rem 5.7rem 0.5rem 1rem; height: 3.5rem; line-height: 3.5rem; border: 1px solid #c5d1de; }
+.discuss .dis-list .reply .user { margin: 1rem 0; }
+.discuss .dis-list .reply .user .user-name { margin-left: 0; }
+.discuss .dis-list .reply .rep-list .rep-item { padding: 1.0rem 0; border-bottom: 1px dotted #dadada; }
+.discuss .dis-list .reply .rep-list .rep-item:last-child { border: 0; }
+.discuss .dis-list .reply .rep-more-box { font-size: 1.2rem; text-align: right; }
+.discuss .dis-list .reply .rep-more-box .more-rep { color: #5d90cc; float: left; }
+.discuss .dis-list .reply .rep-more-box .up-rep { color: #999; }
+.discuss .look-more { font-size: 1.2rem; color: #5d90cc; text-align: center; width: 100%; background-color: #f6f9fa; display: block; line-height: 2.5rem; }
+
+/* ================================================= [社区问答详情页移动端] 私有页面
+===================================================*/
+.ask-detail { width: 100%; box-sizing: border-box; padding: 0 1.6rem; padding-top: 1.5rem; /********正文部分***************/ /*************相关推荐*****************/ }
+.ask-detail .main .title { font-size: 2.3rem; font-weight: bold; margin-bottom: 0.7rem; }
+.ask-detail .main .user { color: #999; margin-bottom: 1.4rem; }
+.ask-detail .main .user span { margin-left: 0.8rem; }
+.ask-detail .main .user span:first-child { margin-left: 0; }
+.ask-detail .main .user .user-name { font-size: 1.4rem; color: #333; display: inline-block; max-width: 15rem; vertical-align: middle; }
+.ask-detail .main .user .user-time { font-size: 1.2rem; }
+.ask-detail .main .label-box .detail-label { display: inline-block; min-width: 5.5rem; padding: 0 0.6rem; text-align: center; -webkit-border-radius: 10rem; border-radius: 10rem; line-height: 2.4rem; font-size: 1.2rem; background-color: #eef4fa; color: #5d90cc; margin-right: 0.5rem; }
+.ask-detail .main .label-box .detail-label:hover { background-color: #5d90cc; color: #ffffff; }
+.ask-detail .main .main-text { font-size: 1.6rem; padding-top: 1.9rem; }
+.ask-detail .main .main-text .up { display: block; color: #5d90cc; font-size: 1.2rem; line-height: 3rem; }
+.ask-detail .main .main-text .up.part { display: none; }
+.ask-detail .main .main-text img { max-width: 100%; }
+.ask-detail .main .main-text .focus-box { text-align: right; margin-top: 1rem; }
+.ask-detail .main .main-text .focus-box a { text-align: center; display: inline-block; width: 10.5rem; height: 2.9rem; line-height: 2.9rem; font-size: 1.4rem; color: #fff; border-radius: 0.3rem; margin-left: 1.2rem; }
+.ask-detail .main .main-text .focus-box a i[class*="g-iconfont"] { margin-right: 0.4rem; }
+.ask-detail .main .main-text .focus-box .focus { background-color: #80a1df; }
+.ask-detail .main .main-text .focus-box .answer { background-color: #0096ff; }
+.ask-detail .about { margin-top: 2.5rem; }
+.ask-detail .about .about-tit { font-size: 1.6rem; color: #717171; font-weight: bold; }
+
+/**************评论**********************/
+.discuss { margin-top: 3rem; }
+.discuss .dis-num { margin-bottom: 0; }
+.discuss .content .content-img { margin: 1rem 0; max-width: 100%; }

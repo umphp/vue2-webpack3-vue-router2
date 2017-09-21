@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* ************************************************************************* * GAD(Game and Dream) Css Framework                                   * * @copyright      Copyright (c) 2016, GAD.QQ.COM All rights reserved. * @link           http://gad.qq.com/                                  * @author         tinnocui                                            * @Team           GAD                                                 * @version        1.0                                                 * @lastmodify     2016.9.28                                           * * *************************************************************************
+*/
+/* ============================================================ 样式重置 描述：定义全站标签的基础样式 ============================================================ */
+/** @name ：   样式重置 @explain : 重置一些标签的默认样式，避免某些兼容问题 @author :  tinnocui @update :  2016.01.27
+*/
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; }
+
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, label, input, select, textarea, button, th, td, menu { margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6, input, textarea, select, button, label { font-size: 100%; vertical-align: middle; font-weight: 400; }
+
+ul, dl, ol { list-style: none; }
+
+img, fieldset { border: 0 none; outline: 0 none; }
+
+img { display: inline-block; overflow: hidden; vertical-align: middle; }
+
+em { font-style: normal; }
+
+strong { font-weight: normal; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+input, textarea, select { -webkit-appearance: none; -webkit-tap-highlight-color: transparent; outline: none; border-radius: 0; font-family: Arial, Helvetica; }
+
+input { border: 0 none; }
+
+button { outline: none; }
+
+textarea { word-wrap: break-word; resize: none; }
+
+/* word-wrap for opera, resize for webkit */
+select { border: 0 none; }
+
+select::-ms-expand { display: none; }
+
+::-ms-check { display: none; }
+
+::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+input[type="number"] { -webkit-user-select: text; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none !important; margin: 0; }
+
+button, input[type="button"] { cursor: pointer; border: 0 none; }
+
+a, button, input, img { -webkit-touch-callout: none; }
+
+a { outline: 0 none; text-decoration: none; color: #40BCE8; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; }
+
+a { color: #333333; }
+
+a, a:hover { text-decoration: none; }
+
+/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+/* 去除android4.0以下 a/button/input标签被点击时产生的边框 因为边框引起了不少bug */
+a, button, input, label { -webkit-tap-highlight-color: transparent; }
+
+/* Android4.0下不识别选择器-webkit-transform-3d 使用它可做Android4.0下版本兼容 */
+@media all and (-webkit-transform-3d) { /* android4.0+ ios4+ 恢复按钮被点击时产生的效果 */
+  a, button, input { -webkit-tap-highlight-color: rgba(130, 130, 130, 0); } }
+html, body { height: 100%; }
+
+body { -webkit-text-size-adjust: none; font: 12px/1.5 Arial, Helvetica; color: #333333; }
+
+/* VUE JS */
+[v-cloak] { display: none !important; }
+
+/* ============================================================ 常用功能类 描述： ============================================================ */
+/* 浮动/清楚浮动 */
+.f-fl { float: left; }
+
+.f-fr { float: right; }
+
+.f-clearfix { zoom: 1; }
+
+.f-clearfix:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
+
+/* 隐藏/显示 */
+.f-hide { display: none !important; }
+
+.f-show { display: block !important; }
+
+.f-hidden { position: absolute !important; width: 0 !important; height: 0 !important; line-height: 0 !important; overflow: hidden !important; }
+
+.f-abs-hide { position: absolute; top: -9999em; left: -9999em; }
+
+/* 文本对齐 */
+.f-align-l { text-align: left; }
+
+.f-align-c { text-align: center; }
+
+.f-align-r { text-align: right; }
+
+/*文字超过一行显示省略号*/
+.f-hide-col-1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.f-hide-col-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+.f-hide-col-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* 盒模型（兼容ios 4+、android 2.3+、winphone8+） 
+------------------------------ */
+/*  定义为盒模型  */
+.f-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+/*  盒模型垂直布局  */
+.f-flex-v { -webkit-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+
+/*  子元素自动占据剩余的空间  */
+.f-flex-1 { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+
+/*  水平布局下的子元素-两端对齐  */
+.f-flex-h-justify { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+/*  水平布局下的子元素-水平居中  */
+.f-flex-h-hcenter { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+/*  水平布局下的子元素-垂直居中  */
+.f-flex-h-vcenter { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+/* 图片变圆 */
+.f-circle { display: inline-block; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; }
+
+/* ============================================================ 素材 ============================================================ */
+/* 加载图标 */
+.gico-loading { display: inline-block; text-indent: 0.5rem; }
+
+.gico-loading.loading-20 { background: url(/assets/m/img/global/loading_20.gif) no-repeat 0 center; line-height: 1.0rem; padding-left: 1.0rem; font-size: 1.2rem; background-size: 1.0rem; }
+
+.gico-loading.loading-60 { background: url(/assets/m/img/global/loading_60.gif) no-repeat 0 center; line-height: 3.0rem; padding-left: 3.0rem; font-size: 1.5rem; background-size: 3.0rem; }
+
+.gico-wxloading { display: inline-block; width: 2.0rem; height: 2.0rem; -webkit-animation: wxloading 1s steps(12, end) infinite; animation: wxloading 1s steps(12, end) infinite; background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat; background-size: 100%; }
+
+@-webkit-keyframes wxloading { 0% { transform: rotate3d(0, 0, 1, 0deg); }
+  100% { transform: rotate3d(0, 0, 1, 360deg); } }
+@keyframes wxloading { 0% { transform: rotate3d(0, 0, 1, 0deg); }
+  100% { transform: rotate3d(0, 0, 1, 360deg); } }
+/* 字体图标素材 */
+@font-face { font-family: "giconfont"; src: url("/assets/v2/m/font/global/iconfont.eot?t=1498044266699");
+  /* IE9*/
+src: url("/assets/v2/m/font/global/iconfont.eot?t=1498044266699#iefix") format("embedded-opentype"), url("/assets/v2/m/font/global/iconfont.woff?t=1498044266699") format("woff"), url("/assets/v2/m/font/global/iconfont.ttf?t=1498044266699") format("truetype"), url("/assets/v2/m/font/global/iconfont.svg?t=1498044266699#iconfont") format("svg");
+  /* iOS 4.1- */ }
+i[class*="g-iconfont"] { font-family: "giconfont" !important; font-style: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.g-iconfont-del:before { content: "\e600"; }
+
+.g-iconfont-pinglun:before { content: "\e612"; }
+
+.g-iconfont-like:before { content: "\e616"; }
+
+.g-iconfont-pic:before { content: "\e697"; }
+
+.g-iconfont-play:before { content: "\e602"; }
+
+.g-iconfont-arrowup:before { content: "\e6ca"; }
+
+.g-iconfont-star:before { content: "\e620"; }
+
+.g-iconfont-arrowright:before { content: "\e634"; }
+
+.g-iconfont-arrowleft:before { content: "\e605"; }
+
+.g-iconfont-pen:before { content: "\e603"; }
+
+.g-iconfont-arrowdown:before { content: "\e635"; }
+
+/* ============================================================ 常用UI模块 ============================================================ */
+/**  @name ： 加载更多dlmore @explain ：数据加载、内容加载更多三种状态：默认按钮、加载中、无数据 @updater ： tinnocui @html模块 ： 基类 html <!--交互说明(在dlmore后追加类)： 加载按钮 | dl-goto 加载中 | dl-loading 没有更多数据 | dl-nomore --> <div class="m-dlmore dl-goto"> <a class="dlmore-btn" href="javascript:;">加载更多</a> <span class="dlmore-loading gico-loading loading-20">加载中...</span> <span class="dlmore-nomore">没有更多消息了...</span> </div>
+*/
+.m-dlmore { text-align: center; line-height: 1.8rem; color: #999; }
+
+.m-dlmore .dlmore-btn { display: inline-block; width: 100%; font-size: 1.2rem; background: #F8F8F8; cursor: pointer; }
+
+.m-dlmore .dlmore-btn, .m-dlmore .dlmore-btn:hover { color: #3c69aa; }
+
+.m-dlmore .dlmore-btn, .m-dlmore .dlmore-loading, .m-dlmore .dlmore-nomore { display: none; }
+
+.m-dlmore.dl-goto .dlmore-btn, .m-dlmore.dl-loading .dlmore-loading, .m-dlmore.dl-nomore .dlmore-nomore { display: inline-block; }
+
+/**  @name ： 关键字标签label @explain ：内容载体的系统分类，标记 @updater ： tinnocui @html模块 ： 基类 <span class="m-label" target="_blank" href="javascript:;">英雄联盟</span> <a class="m-label" target="_blank" href="javascript:;">英雄联盟</a>
+*/
+.m-label { display: inline-block; min-width: 5.5rem; padding: 0 0.6rem; text-align: center; -webkit-border-radius: 10rem; border-radius: 10rem; line-height: 2.4rem; font-size: 1.2rem; background-color: #eef4fa; color: #5d90cc; margin-right: 0.5rem; }
+.m-label:focus, .m-label.focus { background-color: #5d90cc; color: #ffffff; }

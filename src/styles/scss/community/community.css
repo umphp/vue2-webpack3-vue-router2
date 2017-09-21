@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* ================================================= [社区] 公用页面
+===================================================*/
+.uarticle .uarticle-item { padding: 1.5rem 0 1.3rem 0; border-bottom: 1px dotted #dadada; }
+.uarticle .uarticle-item:last-child { border-bottom: 0; }
+.uarticle .uarticle-item .uarticle-tit { font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem; }
+.uarticle .uarticle-item .uarticle-pic { float: left; overflow: hidden; margin-right: 1rem; }
+.uarticle .uarticle-item .uarticle-pic img { width: 11.1rem; height: 7.1rem; }
+.uarticle .uarticle-item .uarticle-tro .link { color: #999; font-size: 1.4rem; }
+.uarticle .uarticle-item .author { color: #999; margin-bottom: 0.7rem; }
+.uarticle .uarticle-item .author .author-head { display: inline-block; width: 2.5rem; height: 2.5rem; border-radius: 50%; overflow: hidden; vertical-align: middle; }
+.uarticle .uarticle-item .author .author-name { display: inline-block; vertical-align: middle; font-size: 1.4rem; color: #333; margin-left: 0.8rem; max-width: 10rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.uarticle .uarticle-item .author .author-time { font-size: 1.2rem; margin-left: 2.4rem; }
+.uarticle .uarticle-item .author .anthor-done { margin-left: 0.8rem; }
+.uarticle .uarticle-item .umetadata { font-size: 1.2rem; margin-top: 1.3rem; zoom: 1; }
+.uarticle .uarticle-item .umetadata:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
+.uarticle .uarticle-item .umetadata .umetadata-main { float: left; }
+.uarticle .uarticle-item .umetadata .umetadata-li { margin-right: 0.7rem; display: inline-block; }
+.uarticle .uarticle-item .umetadata .umetadata-li .link { color: #999; }
+.uarticle .uarticle-item .umetadata .umetadata-li .link.fav { font-size: 1.2rem; color: #5d90cc; padding: 0.3rem 1rem; background-color: #e2edff; border-radius: 0.2rem; }
+.uarticle .uarticle-item .video-wrap { width: 100%; height: 15.7rem; position: relative; margin-top: 1.5rem; }
+.uarticle .uarticle-item .video-wrap .video-play { position: absolute; top: 50%; left: 50%; margin-left: -2.25rem; margin-top: -2.25rem; cursor: pointer; color: #fff; font-size: 4.5rem; line-height: normal; z-index: 1; }
+.uarticle .uarticle-item .video-wrap .video-box { width: 100%; height: 100%; }
+.uarticle .answer-job .job-txt { color: #999; margin-left: 0.8rem; margin-bottom: 1.2rem; }
+.uarticle .work-img-item.uarticle-item .uarticle-tit { margin: 0; }
+.uarticle .work-img-item .umetadata { margin-top: 0.8rem; }
+.uarticle .work-img-item .uarticle-tro { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.uarticle .workslist { zoom: 1; }
+.uarticle .workslist:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
+.uarticle .workslist .workslist-item { float: left; margin-left: 0.3rem; }
+.uarticle .workslist .workslist-item:first-child { margin-left: 0; }
+.uarticle .workslist .workslist-item img { width: 11.1rem; height: 6.9rem; }
+
+@media (min-width: 292px) and (max-width: 320px) { .uarticle .workslist .workslist-item img { width: 10.1rem; height: 6.28rem; } }
+@media screen and (max-width: 290px) { .uarticle .workslist .workslist-item img { width: 9.1rem; height: 5.65rem; } }
+@media screen and (max-width: 260px) { .uarticle .workslist .workslist-item img { width: 8.1rem; height: 5.65rem; } }
+.collect { width: 100%; text-align: center; margin: 2.0rem 0; }
+.collect .item-aixin:hover, .collect .item-aixin.item-on { background: #FC7E7E; border-color: #FC7E7E; color: #fff; }
+.collect .item-aixin.item-on i { color: #fff; }
+.collect .item-aixin:hover i { color: #fff; }
+.collect .item-star:hover, .collect .item-star.item-on { background: #80A1DF; border-color: #80A1DF; color: #fff; }
+.collect .item-star.item-on i { color: #fff; }
+.collect .item-star:hover i { color: #fff; }
+.collect .collect-item { display: inline-block; width: 4.8rem; height: 4.8rem; border-radius: 50%; border: 1px solid #C8D3E0; text-align: center; margin: 0 0.75rem; }
+.collect .collect-item .collect-num { display: block; width: 100%; }
+.collect i[class*="g-iconfont"] { display: block; height: 2.0rem; margin: 0 auto; line-height: 2rem; margin-top: 0.75rem; font-size: 2rem; color: #68a2e6; }

@@ -1,5 +1,3 @@
-# GAD MOBILE
-
 ## HOW TO USE
 
 拉取代码

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* ---------------- publish.shtml(发表页) -------------------- */
+.publish .publish-title { position: absolute; width: 100%; line-height: 4rem; font-size: 1.6rem; text-align: center; }
+.publish .publish-btn-line { border-bottom: 1px solid #eceef2; }
+.publish .publish-form { height: 100%; }
+.publish .btn-cancle, .publish .btn-ok { display: inline-block; padding: 1rem 1.5rem; font-size: 1.4rem; color: #1c93e6; background-color: #ffffff; }
+.publish .btn-ok { float: right; }
+.publish .btn-ok.disabled { color: #d0d0d0; }
+.publish .publish-form-text { width: 100%; height: 24rem; margin-top: 1.6rem; padding: 0 1.3rem 2rem; -webkit-box-sizing: border-box; box-sizing: border-box; border: none; font-size: 1.4rem; }
+.publish .publish-area { position: relative; margin: 1.3rem; padding-bottom: 3rem; border: 1px solid #eceef2; }
+.publish .publish-area .ico-pic { margin-right: 0.5rem; font-size: 2rem; vertical-align: middle; }
+.publish .publish-area .addpic { position: absolute; right: 1.3rem; bottom: 1rem; background-color: transparent; font-size: 1.4rem; color: #8694a3; }
